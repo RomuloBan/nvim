@@ -1,3 +1,8 @@
+local status, rose_pine = pcall(require, "rose-pine")
+if not status then
+	return
+end
+
 function ColorMyPencils(color)
 	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)

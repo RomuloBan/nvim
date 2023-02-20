@@ -1,3 +1,8 @@
+local status, lsp = pcall(require, "lsp")
+if not status then
+	return
+end
+
 local lsp = require('lsp-zero').preset({
   name = 'minimal',
   set_lsp_keymaps = true,
